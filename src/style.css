@@ -9,3 +9,48 @@ body {
 	font-size: 14px;
 	overflow-x: hidden;
 }
+
+header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: #999;
+}
+
+	header article {
+		position: absolute;
+		z-index: 3;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%) scale(3);
+	}
+
+		header article h2 {
+			color: #fff;
+			font-weight: bolder;
+		}
+
+		header article .boton {
+			background-color: #f78921;
+			transition: all 0.2s ease-in-out;
+			width: 4em;
+			border-radius: 1px;
+			padding: 1px 10px 1px 10px;
+			cursor: pointer;
+		}
+
+			header article .boton:hover {
+				background-color: #d16500;
+			}
+
+			header article .boton p {
+				color: #fff;
+				font-size: 8px;
+			}
+
+	header aside {
+		position: absolute;
+		z-index: 2;
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,.1));
+	}
