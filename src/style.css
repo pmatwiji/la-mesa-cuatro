@@ -4,7 +4,7 @@
 body {
 	text-align: center;
 	background-color: #fff;
-	color: #222;
+	color: #445660;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 14px;
 	overflow-x: hidden;
@@ -14,43 +14,97 @@ header {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-color: #999;
 }
 
 	header article {
 		position: absolute;
-		z-index: 3;
+		z-index: 4;
 		top: 50%; left: 50%;
-		transform: translate(-50%, -50%) scale(3);
+		transform: translate(-50%, -50%);
 	}
 
 		header article h2 {
 			color: #fff;
 			font-weight: bolder;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+
+		header article p {
+			color: #ffffff;
+			font-size: 1.2rem;
+			margin-top: -2em;
+			font-weight: bold;
+			margin-bottom: 2em;
 		}
 
 		header article .boton {
+			position: absolute;
+			left: 50%; transform: translateX(-50%);
 			background-color: #f78921;
 			transition: all 0.2s ease-in-out;
-			width: 4em;
-			border-radius: 1px;
-			padding: 1px 10px 1px 10px;
+			width: 12em;
+			border-radius: 3px;
+			border-bottom: #d16500 0.6em solid;
+			padding: 1em;
 			cursor: pointer;
 		}
 
 			header article .boton:hover {
 				background-color: #d16500;
+				border-bottom: #b85900 0.2em solid;
+				margin-top: 0.4em;
 			}
 
-			header article .boton p {
+			header article .boton span {
 				color: #fff;
-				font-size: 8px;
+				font-size: 1.2rem;
 			}
 
 	header aside {
 		position: absolute;
+		z-index: 3;
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,.15), rgba(0,0,0,0), rgba(0,0,0,.15));
+	}
+
+	header .fondo {
+		position: absolute;
+		z-index: 1;
+		height: 100vh;
+		width: 100%;
+		background-color: #445660;
+	}
+
+	header .fondos {
+		position: absolute;
 		z-index: 2;
 		height: 100vh;
 		width: 100%;
-		background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,.1));
+		animation-name: galeria;
+		animation-duration: 8s;
+		animation-timing-function: cubic-bezier(1,.01,.13,.99);
+		animation-iteration-count: infinite;
 	}
+
+		header .f1 {
+			animation-delay: 0s;
+			background: #ff0;
+		}
+
+		header .f2 {
+			animation-delay: 8s;
+			background: #f00;
+		}
+
+		header .f3 {
+			animation-delay: 16s;
+			background: #f98789;
+		}
+
+			@keyframes galeria {
+				0%, 20% { left: 100vw; }
+				30%, 70% { left: 0vw; }
+				80%, 100% { left: -100vw; }
+			}
