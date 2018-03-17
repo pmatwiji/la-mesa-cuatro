@@ -10,6 +10,63 @@ body {
 	overflow-x: hidden;
 }
 
+nav {
+	position: fixed;
+	z-index: 100;
+	width: 80%;
+	margin-top: 2em;
+	left: 50%; transform: translateX(-50%);
+	color: #fff;
+}
+
+
+	nav .menu-left {
+		text-align: left;
+		float: left;
+		font-size: 1.2rem;
+	}
+
+		nav .menu-left i {
+			font-style: normal;
+			font-weight: bold;
+			color: #f78921;
+		}
+
+	nav .menu-right {
+		text-align: right;
+		float: right;
+	}
+
+		nav .menu-right a {
+			font-weight: bold;
+			text-decoration: none;
+			color: #fff;
+			margin-left: 2em;
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+		}
+
+			nav .menu-right a:hover {
+				color: #f78921;
+			}
+
+		nav .menu-right .boton-nav {
+			position: relative;
+			top: -.1em;
+			background-color: #f78921;
+			width: 5em;
+			border-radius: 3px;
+			border-bottom: #d16500 0.4em solid;
+			padding: .5em 1em;
+		}
+
+		nav .menu-right .boton-nav:hover {
+			background-color: #d16500;
+			border-bottom: #b85900 0.2em solid;
+			top: .1em;
+			color: #fff;
+		}
+
 header {
 	position: relative;
 	height: 100vh;
@@ -66,7 +123,7 @@ header {
 		z-index: 3;
 		height: 100vh;
 		width: 100%;
-		background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,.2));
+		background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.1), rgba(0,0,0,.3));
 	}
 
 	header .fondo {
@@ -74,7 +131,7 @@ header {
 		z-index: 1;
 		height: 100vh;
 		width: 100%;
-		background-color: #445660;
+		background-color: #2c5266;
 	}
 
 	header .fondos {
