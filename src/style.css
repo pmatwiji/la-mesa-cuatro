@@ -166,3 +166,73 @@ header {
 				30%, 70% { left: 0vw; }
 				80%, 100% { left: -100vw; }
 			}
+
+hr {
+	margin: 0 10%;
+	opacity: 0.25;
+}
+
+article {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 12em 0;
+}
+
+	#threeCont {
+		/*background: #999;*/
+	}
+
+		#threeCont .row {
+			width: 33.3%;
+			float: left;
+			text-align: center;
+		}
+
+			#threeCont .row .img-circ {
+				border-radius: 50%;
+				height: 140px;
+				width: 140px;    
+			}
+
+			#threeCont .row h3 {
+				font-size: 2rem;
+				margin-bottom: 0.5em;
+			}
+
+			#threeCont .row .desc-circ {
+				margin: 0 1em 2em 1em;
+				line-height: 1.35em;
+				color: #555;
+				font-size: 1rem;
+			}
+
+			#threeCont .row a {
+				font-weight: bold;
+				text-decoration: none;
+				color: #fff;
+				margin-left: 2em;
+				transition: all 0.2s ease-in-out;
+				cursor: pointer;
+			}
+	
+				#threeCont .row a:hover {
+					color: #f78921;
+				}
+	
+			#threeCont .row .boton-row {
+				position: relative;
+				top: -.1em;
+				background-color: #445660;
+				width: 5em;
+				border-radius: 3px;
+				border-bottom: #313D44 0.4em solid;
+				padding: .5em 1em;
+			}
+	
+			#threeCont .row .boton-row:hover {
+				background-color: #313D44;
+				border-bottom: #29343A 0.2em solid;
+				top: .1em;
+				color: #fff;
+			}
