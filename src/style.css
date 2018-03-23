@@ -13,12 +13,29 @@ body {
 nav {
 	position: fixed;
 	z-index: 100;
-	width: 80%;
+	width: 1000px;
 	margin-top: 2em;
 	left: 50%; transform: translateX(-50%);
 	color: #fff;
 }
 
+	nav aside {
+		background: linear-gradient(40deg, #445660, #40515a);
+		height: 4.5em;
+		width: 110%;
+		display: block;
+		position: fixed;
+		border-radius: 5px;
+		box-shadow: 0px 0px 50px rgba(68, 86 ,96, 0.5);
+		z-index: 1;
+		top: -1.6em;
+		left: 50%; transform: translateX(-50%);
+	}
+
+	nav .menu-left, nav .menu-right {
+		position: relative;
+		z-index: 2;
+	}
 
 	nav .menu-left {
 		text-align: left;
@@ -168,19 +185,21 @@ header {
 			}
 
 hr {
-	margin: 0 10%;
 	opacity: 0.25;
 }
 
-article {
-	width: 80%;
+section {
+	width: 1100px;
 	margin: 0 auto;
+}
+
+article {
 	overflow: hidden;
 	padding: 12em 0;
 }
 
 	#threeCont {
-		/*background: #999;*/
+		/* background: rgba(68, 86 ,96, .025); */
 	}
 
 		#threeCont .row {
@@ -236,3 +255,21 @@ article {
 				top: .1em;
 				color: #fff;
 			}
+
+footer {
+	padding: 4em 0;
+}
+
+	footer p {
+		text-align: left;
+	}
+	
+	footer a {
+		color: #b85900;
+		text-decoration: none;
+	}
+	
+	footer .backToTop{
+		float: right;
+		margin: 0 0 10px;
+	}

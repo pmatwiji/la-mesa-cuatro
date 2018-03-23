@@ -11,6 +11,9 @@
 <link rel="stylesheet" type="text/css" href="src/normalize.css">
 <link rel="stylesheet" type="text/css" href="src/style.css">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -24,6 +27,7 @@
         <a href="#" class="boton-nav">Y el botón</a>
     </div>
     <br clear="both">
+    <aside></aside>
 </nav>
 
 <header>
@@ -88,11 +92,36 @@
 
     </article>
 
+    <hr>
+
     <footer>
+
+    <p class="backToTop">
+            <a href="#">Volver al principio</a>
+    </p>
+
+    <p>&copy; 2018 Shalalalala ·
+        <a href="#">Privacidad </a>·
+        <a href="#">Terminos</a>
+    </p>
 
     </footer>
 
 </section>
+
+<script type="text/javascript">
+	(function($) {          
+		$(document).ready(function(){                    
+			$(window).scroll(function(){                          
+				if ($(this).scrollTop() > 100) {
+					$('nav aside').fadeIn(300);
+				} else {
+					$('nav aside').fadeOut(300);
+				}
+			});
+		});
+	})(jQuery);
+</script>
 
 </body>
 </html>
